@@ -3,9 +3,8 @@
 #   docker compose up -d --build
 #
 services:
-  app:
-    build: .
-    image: goproject:latest
+  app:    
+    image: ghcr.io/jasonlollback/goproject:latest
     container_name: goproject
     restart: unless-stopped
     environment:

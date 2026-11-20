@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  packages: write
+
 
 concurrency:
   group: release
@@ -37,16 +39,7 @@ jobs:
           go mod tidy -diff
           go test ./...
           go vet ./...
-
-  docker:
-    if: github.event_name == 'push'
-    runs-on: ubuntu-24.04
-
-    permissions:
-      contents: read
-      packages: write
-
-    steps:      
+  
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@81c6f93d4bc991e510b342a00b419b3bb4efc5c6 # v4
         with:
