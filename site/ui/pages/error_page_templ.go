@@ -10,10 +10,10 @@ import "github.com/a-h/templ"
 import templruntime "github.com/a-h/templ/runtime"
 
 import (
-	"github.com/axadrn/goilerplate/v4/site/ui/components/button"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/empty"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/icon"
-	"github.com/axadrn/goilerplate/v4/site/ui/layouts"
+	"github.com/jasonlollback/goproject/site/ui/components/button"
+	"github.com/jasonlollback/goproject/site/ui/components/empty"
+	"github.com/jasonlollback/goproject/site/ui/components/icon"
+	"github.com/jasonlollback/goproject/site/ui/layouts"
 )
 
 // NotFound is the 404 page the server answers for every unknown path,
@@ -172,7 +172,7 @@ func NotFound() templ.Component {
 							}()
 						}
 						ctx = templ.InitializeContext(ctx)
-						templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "Back to goilerplate")
+						templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "Back to goproject")
 						if templ_7745c5c3_Err != nil {
 							return templ_7745c5c3_Err
 						}

@@ -20,7 +20,7 @@ sync_base_assets() {
   local work_dir="${work_root}/base"
 
   mkdir -p "${work_dir}"
-  printf 'module example.com/goilerplate-shadcn-base\n\ngo 1.26.0\n' > "${work_dir}/go.mod"
+  printf 'module example.com/goproject-shadcn-base\n\ngo 1.26.0\n' > "${work_dir}/go.mod"
   go run "github.com/axadrn/shadcn-templ/v2/cmd/shadcn-templ@${version}" \
     init --cwd "${work_dir}" --css assets/css/globals.css --base-color stone --silent
 
@@ -81,7 +81,7 @@ copy_bundle() {
 sync_base_assets
 
 generator_work_dir="${work_root}/generator"
-generator_module_path="example.com/goilerplate-shadcn-sync"
+generator_module_path="example.com/goproject-shadcn-sync"
 install_components \
   "${generator_work_dir}" \
   "${generator_module_path}" \

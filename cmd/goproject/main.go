@@ -12,11 +12,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/axadrn/goilerplate/v4/internal/cli"
-	"github.com/axadrn/goilerplate/v4/internal/doctor"
-	"github.com/axadrn/goilerplate/v4/internal/github"
-	"github.com/axadrn/goilerplate/v4/internal/tui"
-	"github.com/axadrn/goilerplate/v4/internal/update"
+	"github.com/jasonlollback/goproject/internal/cli"
+	"github.com/jasonlollback/goproject/internal/doctor"
+	"github.com/jasonlollback/goproject/internal/github"
+	"github.com/jasonlollback/goproject/internal/tui"
+	"github.com/jasonlollback/goproject/internal/update"
 	"github.com/charmbracelet/x/term"
 )
 

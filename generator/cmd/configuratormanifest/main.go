@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/axadrn/goilerplate/v4/generator"
+	"github.com/jasonlollback/goproject/generator"
 )
 
 func main() {

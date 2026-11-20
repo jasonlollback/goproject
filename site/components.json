@@ -15,7 +15,7 @@
   "menuColor": "default",
   "menuAccent": "subtle",
   "aliases": {
-    "components": "github.com/axadrn/goilerplate/v4/site/ui/components",
-    "utils": "github.com/axadrn/goilerplate/v4/site/ui/utils"
+    "components": "github.com/jasonlollback/goproject/site/ui/components",
+    "utils": "github.com/jasonlollback/goproject/site/ui/utils"
   }
 }

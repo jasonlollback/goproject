@@ -43,7 +43,7 @@ func (a *App) printHeading(title string) {
 		return
 	}
 	theme := a.theme()
-	fmt.Fprintln(a.Out, theme.brand.Render("goilerplate")+theme.muted.Render(" "+title))
+	fmt.Fprintln(a.Out, theme.brand.Render("goproject")+theme.muted.Render(" "+title))
 }
 
 func (a *App) printSuccess(message string) {

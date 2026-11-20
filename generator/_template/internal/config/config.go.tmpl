@@ -159,7 +159,7 @@ func Load() (*Config, error) {
 		RobotsNoIndex: r.boolean("ROBOTS_NOINDEX", false),
 
 {{- if eq .Database "postgres" }}
-		DBConnection: r.string("DB_CONNECTION", "postgres://goilerplate:dev_password@localhost:5432/goilerplate_dev?sslmode=disable"),
+		DBConnection: r.string("DB_CONNECTION", "postgres://goproject:dev_password@localhost:5432/goproject_dev?sslmode=disable"),
 {{- else }}
 		DBConnection: r.string("DB_CONNECTION", "./data/app.db?_pragma=foreign_keys(1)&_pragma=busy_timeout(5000)&_pragma=journal_mode(WAL)"),
 {{- end }}

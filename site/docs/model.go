@@ -1,6 +1,6 @@
 package docs
 
-import "github.com/axadrn/goilerplate/v4/site/markdown"
+import "github.com/jasonlollback/goproject/site/markdown"
 
 type DocPage struct {
 	Title       string

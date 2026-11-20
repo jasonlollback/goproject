@@ -14,8 +14,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/axadrn/goilerplate/v4/site/ui/components/icon"
-	"github.com/axadrn/goilerplate/v4/site/ui/utils"
+	"github.com/jasonlollback/goproject/site/ui/components/icon"
+	"github.com/jasonlollback/goproject/site/ui/utils"
 )
 
 type Size string

@@ -10,9 +10,9 @@ import "github.com/a-h/templ"
 import templruntime "github.com/a-h/templ/runtime"
 
 import (
-	"github.com/axadrn/goilerplate/v4/site/ui/blocks"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/card"
-	"github.com/axadrn/goilerplate/v4/site/ui/layouts"
+	"github.com/jasonlollback/goproject/site/ui/blocks"
+	"github.com/jasonlollback/goproject/site/ui/components/card"
+	"github.com/jasonlollback/goproject/site/ui/layouts"
 )
 
 func Changelog(htmlContent string) templ.Component {
@@ -262,7 +262,7 @@ func Changelog(htmlContent string) templ.Component {
 			}
 			return nil
 		})
-		templ_7745c5c3_Err = layouts.Home(layouts.SEOProps{Title: "Changelog", Description: "Product updates for goilerplate, newest first.", Path: "/changelog"}).Render(templ.WithChildren(ctx, templ_7745c5c3_Var2), templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = layouts.Home(layouts.SEOProps{Title: "Changelog", Description: "Product updates for goproject, newest first.", Path: "/changelog"}).Render(templ.WithChildren(ctx, templ_7745c5c3_Var2), templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

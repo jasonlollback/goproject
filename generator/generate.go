@@ -36,7 +36,7 @@ const SvelteFirstVersion = "v3.1.0"
 // does not ship. It matches ErrUnsupportedForVersion with errors.Is.
 type UnsupportedForVersionError struct {
 	// Message is a sentence for the person who asked, such as "The MCP server
-	// needs goilerplate v3.1.0 or newer".
+	// needs goproject v3.1.0 or newer".
 	Message string
 }
 
@@ -93,7 +93,7 @@ func (t Template) Generate(destination string, config Config) error {
 		TemplateVersion: t.version,
 		Config:          normalized,
 	}
-	if err := writeJSON(filepath.Join(destination, "goilerplate.lock"), lock); err != nil {
+	if err := writeJSON(filepath.Join(destination, "goproject.lock"), lock); err != nil {
 		return fmt.Errorf("write lock file: %w", err)
 	}
 	return nil

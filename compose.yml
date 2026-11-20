@@ -1,11 +1,11 @@
-# goilerplate.com, deployed by moin: every push to main goes live.
+# goproject.lollback.com, deployed by moin: every push to main goes live.
 # https://moin.run/docs/guides/config
 x-moin:
-  app: goilerplate
+  app: goproject
   port: 8090
   health: /healthz
-  domains: [goilerplate.com, www.goilerplate.com]
-  canonical: goilerplate.com
+  domains: [goproject.lollback.com, www.goproject.lollback.com]
+  canonical: goproject.lollback.com
 
 services:
   site:

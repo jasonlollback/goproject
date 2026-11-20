@@ -28,7 +28,7 @@ func TestDocsReturnsFullPagesAndDatastarEvents(t *testing.T) {
 		`data-signals="{_docsRequest: new AbortController()}"`,
 		`requestCancellation: $_docsRequest`,
 		`evt.metaKey`,
-		`goilerplate:docs:navigated`,
+		`goproject:docs:navigated`,
 	} {
 		if !strings.Contains(body, want) {
 			t.Fatalf("full response does not contain %q", want)
@@ -45,7 +45,7 @@ func TestDocsReturnsFullPagesAndDatastarEvents(t *testing.T) {
 	if contentType := events.Header().Get("Content-Type"); !strings.HasPrefix(contentType, "text/event-stream") {
 		t.Fatalf("Content-Type = %q, want text/event-stream", contentType)
 	}
-	for _, want := range []string{"event: datastar-patch-elements", "goilerplate:docs:navigated", `"path":"/docs"`} {
+	for _, want := range []string{"event: datastar-patch-elements", "goproject:docs:navigated", `"path":"/docs"`} {
 		if !strings.Contains(events.Body.String(), want) {
 			t.Fatalf("Datastar response does not contain %q", want)
 		}

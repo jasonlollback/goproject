@@ -1,10 +1,10 @@
 package pages
 
 import (
-	"github.com/axadrn/goilerplate/v4/site/ui/components/button"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/empty"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/icon"
-	"github.com/axadrn/goilerplate/v4/site/ui/layouts"
+	"github.com/jasonlollback/goproject/site/ui/components/button"
+	"github.com/jasonlollback/goproject/site/ui/components/empty"
+	"github.com/jasonlollback/goproject/site/ui/components/icon"
+	"github.com/jasonlollback/goproject/site/ui/layouts"
 )
 
 // NotFound is the 404 page the server answers for every unknown path,
@@ -27,7 +27,7 @@ templ NotFound() {
 				}
 				@empty.Content(empty.ContentProps{Class: "flex-row flex-wrap justify-center gap-2"}) {
 					@button.Button(button.Props{Href: "/"}) {
-						Back to goilerplate
+						Back to goproject
 					}
 					@button.Button(button.Props{Href: "/docs", Variant: button.VariantOutline}) {
 						Read the docs

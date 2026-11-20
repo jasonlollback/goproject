@@ -202,7 +202,7 @@ func TestHeaderIsCompactAndFooterStaysAtTerminalEdge(t *testing.T) {
 	selection.height = 24
 
 	content := selection.View().Content
-	if !strings.Contains(content, "goilerplate") || !strings.Contains(content, " new  1/13") || strings.Contains(content, "━") {
+	if !strings.Contains(content, "goproject") || !strings.Contains(content, " new  1/13") || strings.Contains(content, "━") {
 		t.Fatalf("header = %q", strings.Split(content, "\n")[2])
 	}
 	lines := strings.Split(content, "\n")
@@ -213,11 +213,11 @@ func TestHeaderIsCompactAndFooterStaysAtTerminalEdge(t *testing.T) {
 
 func TestBackgroundMessageSelectsReadableLightTheme(t *testing.T) {
 	selection := newModel()
-	darkBrand := selection.styles.brand.Render("goilerplate")
+	darkBrand := selection.styles.brand.Render("goproject")
 
 	updated, _ := selection.Update(tea.BackgroundColorMsg{Color: lipgloss.Color("#FFFFFF")})
 	light := updated.(model)
-	lightBrand := light.styles.brand.Render("goilerplate")
+	lightBrand := light.styles.brand.Render("goproject")
 
 	if darkBrand == lightBrand {
 		t.Fatal("light background kept the dark-terminal accent palette")

@@ -90,7 +90,7 @@ func (h *DocsHandler) ShowDocs(w http.ResponseWriter, r *http.Request) {
 
 	if isAction(r) {
 		if err := renderFragment(w, r, pages.Docs(page, docsTree, prevPage, nextPage), "docs-content", "seo-title", "seo-markdown", "docs-breadcrumb", "docs-toc"); err == nil {
-			if err := datastar.NewSSE(w, r).DispatchCustomEvent("goilerplate:docs:navigated", map[string]string{"path": r.URL.Path}); err != nil {
+			if err := datastar.NewSSE(w, r).DispatchCustomEvent("goproject:docs:navigated", map[string]string{"path": r.URL.Path}); err != nil {
 				slog.Error("dispatch docs navigation event failed", "error", err)
 			}
 		}

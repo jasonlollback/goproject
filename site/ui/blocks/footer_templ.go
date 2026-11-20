@@ -13,7 +13,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/axadrn/goilerplate/v4/site/brand"
+	"github.com/jasonlollback/goproject/site/brand"
 )
 
 // Footer is the brand and one quiet line: support, the maker and
@@ -65,7 +65,7 @@ func Footer() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "<span>Built by <a href=\"https://x.com/axadrn\" target=\"_blank\" rel=\"me noopener\" class=\"text-foreground underline-offset-4 transition-colors hover:underline\">Axel Adrian</a></span> <span>© ")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "<span>Built by <a href=\"https://github.com/jasonlollback\" target=\"_blank\" rel=\"me noopener\" class=\"text-foreground underline-offset-4 transition-colors hover:underline\">jasonlollback</a></span> <span>© ")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

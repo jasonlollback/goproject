@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/axadrn/goilerplate/v4/site/brand"
+	"github.com/jasonlollback/goproject/site/brand"
 )
 
 // Footer is the brand and one quiet line: support, the maker and
@@ -19,7 +19,7 @@ templ Footer() {
 				</a>
 				<nav class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-muted-foreground" aria-label="Footer">
 					@footerLink("/docs/support", "Support")
-					<span>Built by <a href="https://x.com/axadrn" target="_blank" rel="me noopener" class="text-foreground underline-offset-4 transition-colors hover:underline">Axel Adrian</a></span>
+					<span>Built by <a href="https://github.com/jasonlollback" target="_blank" rel="me noopener" class="text-foreground underline-offset-4 transition-colors hover:underline">jasonlollback</a></span>
 					<span>© { strconv.Itoa(time.Now().Year()) } { brand.Name }</span>
 				</nav>
 			</div>

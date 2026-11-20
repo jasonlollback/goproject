@@ -14,13 +14,13 @@ import (
 	"math/rand"
 	"strconv"
 
-	"github.com/axadrn/goilerplate/v4/site/ui/components/button"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/icon"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/input"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/sheet"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/skeleton"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/tooltip"
-	"github.com/axadrn/goilerplate/v4/site/ui/utils"
+	"github.com/jasonlollback/goproject/site/ui/components/button"
+	"github.com/jasonlollback/goproject/site/ui/components/icon"
+	"github.com/jasonlollback/goproject/site/ui/components/input"
+	"github.com/jasonlollback/goproject/site/ui/components/sheet"
+	"github.com/jasonlollback/goproject/site/ui/components/skeleton"
+	"github.com/jasonlollback/goproject/site/ui/components/tooltip"
+	"github.com/jasonlollback/goproject/site/ui/utils"
 )
 
 // The pendant of shadcn's sidebar.tsx width constants; the cookie and the

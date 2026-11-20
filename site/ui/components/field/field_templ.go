@@ -14,7 +14,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/axadrn/goilerplate/v4/site/ui/utils"
+	"github.com/jasonlollback/goproject/site/ui/utils"
 )
 
 type Orientation string

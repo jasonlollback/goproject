@@ -197,11 +197,11 @@
     border: 2px solid var(--muted-foreground);
     border-top-color: var(--foreground);
     border-radius: 9999px;
-    animation: goilerplate-spin 0.7s linear infinite;
+    animation: goproject-spin 0.7s linear infinite;
   }
 }
 
-@keyframes goilerplate-spin {
+@keyframes goproject-spin {
   to {
     transform: rotate(360deg);
   }

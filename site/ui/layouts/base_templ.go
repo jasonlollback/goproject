@@ -10,10 +10,10 @@ import "github.com/a-h/templ"
 import templruntime "github.com/a-h/templ/runtime"
 
 import (
-	"github.com/axadrn/goilerplate/v4/site/brand"
-	"github.com/axadrn/goilerplate/v4/site/sitectx"
-	"github.com/axadrn/goilerplate/v4/site/ui/components"
-	"github.com/axadrn/goilerplate/v4/site/ui/utils"
+	"github.com/jasonlollback/goproject/site/brand"
+	"github.com/jasonlollback/goproject/site/sitectx"
+	"github.com/jasonlollback/goproject/site/ui/components"
+	"github.com/jasonlollback/goproject/site/ui/utils"
 )
 
 type SEOProps struct {

@@ -10,10 +10,10 @@ import "github.com/a-h/templ"
 import templruntime "github.com/a-h/templ/runtime"
 
 import (
-	"github.com/axadrn/goilerplate/v4/site/ui/components/button"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/input"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/textarea"
-	"github.com/axadrn/goilerplate/v4/site/ui/utils"
+	"github.com/jasonlollback/goproject/site/ui/components/button"
+	"github.com/jasonlollback/goproject/site/ui/components/input"
+	"github.com/jasonlollback/goproject/site/ui/components/textarea"
+	"github.com/jasonlollback/goproject/site/ui/utils"
 )
 
 type Props struct {

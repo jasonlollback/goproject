@@ -10,19 +10,19 @@ import "github.com/a-h/templ"
 import templruntime "github.com/a-h/templ/runtime"
 
 import (
-	"github.com/axadrn/goilerplate/v4/site/brand"
-	"github.com/axadrn/goilerplate/v4/site/githubstars"
-	"github.com/axadrn/goilerplate/v4/site/sitectx"
-	"github.com/axadrn/goilerplate/v4/site/ui/blocks"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/accordion"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/badge"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/button"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/card"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/icon"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/separator"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/tabs"
-	"github.com/axadrn/goilerplate/v4/site/ui/layouts"
-	"github.com/axadrn/goilerplate/v4/site/ui/utils"
+	"github.com/jasonlollback/goproject/site/brand"
+	"github.com/jasonlollback/goproject/site/githubstars"
+	"github.com/jasonlollback/goproject/site/sitectx"
+	"github.com/jasonlollback/goproject/site/ui/blocks"
+	"github.com/jasonlollback/goproject/site/ui/components/accordion"
+	"github.com/jasonlollback/goproject/site/ui/components/badge"
+	"github.com/jasonlollback/goproject/site/ui/components/button"
+	"github.com/jasonlollback/goproject/site/ui/components/card"
+	"github.com/jasonlollback/goproject/site/ui/components/icon"
+	"github.com/jasonlollback/goproject/site/ui/components/separator"
+	"github.com/jasonlollback/goproject/site/ui/components/tabs"
+	"github.com/jasonlollback/goproject/site/ui/layouts"
+	"github.com/jasonlollback/goproject/site/ui/utils"
 )
 
 const (
@@ -187,7 +187,7 @@ func homePrimary(class string) templ.Component {
 }
 
 // ---------------------------------------------------------------- hero
-// homeHero says what goilerplate is, in one headline, one line, one
+// homeHero says what goproject is, in one headline, one line, one
 // command and one button.
 func homeHero() templ.Component {
 	return templruntime.GeneratedTemplate(func(templ_7745c5c3_Input templruntime.GeneratedComponentInput) (templ_7745c5c3_Err error) {
@@ -1415,7 +1415,7 @@ func homeRepo() templ.Component {
 			}
 			templ.ReleaseBuffer(templ_7745c5c3_Buffer)
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 83, ">Handlers, services, repositories and raw SQL. No framework to learn, and nothing at runtime depends on goilerplate.</p><ul class=\"mt-10 grid gap-6\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 83, ">Handlers, services, repositories and raw SQL. No framework to learn, and nothing at runtime depends on goproject.</p><ul class=\"mt-10 grid gap-6\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -1882,7 +1882,7 @@ var homeTree = []codeLine{
 	{"├── AGENTS.md              rules for your coding agent", ""},
 	{"├── Dockerfile", ""},
 	{"├── Taskfile.yml           task dev", ""},
-	{"├── goilerplate.lock       your stack, for updates", ""},
+	{"├── goproject.lock       your stack, for updates", ""},
 	{"├── .github/workflows/ci.yml", ""},
 	{"├── cmd/server/main.go", ""},
 	{"└── internal/", ""},
@@ -2598,7 +2598,7 @@ func homeProof() templ.Component {
 				}
 				templ.ReleaseBuffer(templ_7745c5c3_Buffer)
 			}
-			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 153, "><code class=\"font-mono text-foreground\">goilerplate update</code> puts the next release on its own Git branch. You review it and merge it like any other branch. Your own code stays yours.</p>")
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 153, "><code class=\"font-mono text-foreground\">goproject update</code> puts the next release on its own Git branch. You review it and merge it like any other branch. Your own code stays yours.</p>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
@@ -2704,7 +2704,7 @@ func homeProof() templ.Component {
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
 				}
-				templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 161, "\" aria-label=\"goilerplate update in a terminal\"")
+				templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 161, "\" aria-label=\"goproject update in a terminal\"")
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
 				}
@@ -2718,7 +2718,7 @@ func homeProof() templ.Component {
 				}
 				templ.ReleaseBuffer(templ_7745c5c3_Buffer)
 			}
-			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 162, "><p><span class=\"text-terminal-foreground/45\">$ </span>goilerplate update</p><p class=\"text-live\">✓ Created goilerplate-update-v4.1.0</p><p class=\"mt-3\"><span class=\"text-terminal-foreground/45\">$ </span>git switch goilerplate-update-v4.1.0</p><p><span class=\"text-terminal-foreground/45\">$ </span>git show --stat</p></div>")
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 162, "><p><span class=\"text-terminal-foreground/45\">$ </span>goproject update</p><p class=\"text-live\">✓ Created goproject-update-v4.1.0</p><p class=\"mt-3\"><span class=\"text-terminal-foreground/45\">$ </span>git switch goproject-update-v4.1.0</p><p><span class=\"text-terminal-foreground/45\">$ </span>git show --stat</p></div>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
@@ -3217,7 +3217,7 @@ func homeFAQ() templ.Component {
 					}()
 				}
 				ctx = templ.InitializeContext(ctx)
-				templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 194, "An agent in an empty folder invents auth and billing anew every session. On goilerplate it extends tested code, follows <code class=\"font-mono\">AGENTS.md</code> and hits a failing test when it breaks something.")
+				templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 194, "An agent in an empty folder invents auth and billing anew every session. On goproject it extends tested code, follows <code class=\"font-mono\">AGENTS.md</code> and hits a failing test when it breaks something.")
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
 				}

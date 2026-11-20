@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/axadrn/goilerplate/v4/generator"
+	"github.com/jasonlollback/goproject/generator"
 )
 
 func main() {
@@ -19,7 +19,7 @@ func main() {
 func run() error {
 	output := flag.String("out", "", "empty destination directory")
 	configPath := flag.String("config", "", "path to generator config JSON")
-	version := flag.String("version", "", "template version recorded in goilerplate.lock")
+	version := flag.String("version", "", "template version recorded in goproject.lock")
 	flag.Parse()
 	if *output == "" || *configPath == "" || *version == "" {
 		return fmt.Errorf("out, config, and version are required")

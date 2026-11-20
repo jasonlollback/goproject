@@ -10,13 +10,13 @@ import "github.com/a-h/templ"
 import templruntime "github.com/a-h/templ/runtime"
 
 import (
-	"github.com/axadrn/goilerplate/v4/site/docs"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/button"
-	commandmenu "github.com/axadrn/goilerplate/v4/site/ui/components/command"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/dialog"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/icon"
-	"github.com/axadrn/goilerplate/v4/site/ui/components/kbd"
-	"github.com/axadrn/goilerplate/v4/site/ui/utils"
+	"github.com/jasonlollback/goproject/site/docs"
+	"github.com/jasonlollback/goproject/site/ui/components/button"
+	commandmenu "github.com/jasonlollback/goproject/site/ui/components/command"
+	"github.com/jasonlollback/goproject/site/ui/components/dialog"
+	"github.com/jasonlollback/goproject/site/ui/components/icon"
+	"github.com/jasonlollback/goproject/site/ui/components/kbd"
+	"github.com/jasonlollback/goproject/site/ui/utils"
 )
 
 // docsSearch is the ⌘K search of the docs, the same as shadcn's: the

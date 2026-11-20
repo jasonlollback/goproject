@@ -21,7 +21,7 @@ Tests are separate from the development database. With Docker running, `go test 
 The generated `.env.example` contains a development URL:
 
 ```env
-DB_CONNECTION=postgres://goilerplate:dev_password@localhost:5432/goilerplate_dev?sslmode=disable
+DB_CONNECTION=postgres://goproject:dev_password@localhost:5432/goproject_dev?sslmode=disable
 ```
 
 Copy the file to `.env`. Change credentials when the project leaves local development.

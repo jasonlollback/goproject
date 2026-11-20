@@ -287,7 +287,7 @@ templ Docs(currentPage *model.DocPage, docsTree *model.DocPage, prevPage *model.
 				});
 
 				// Update active states after partial navigation.
-				document.addEventListener('goilerplate:docs:navigated', event => {
+				document.addEventListener('goproject:docs:navigated', event => {
 					const path = event.detail?.path;
 					if (path && path !== window.location.pathname + window.location.search) {
 						window.history.pushState({}, '', path);

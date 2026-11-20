@@ -6,7 +6,7 @@ order: 4
 
 ## TLDR
 
-goilerplate ships conservative defaults for the common ways a SaaS gets hurt.
+goproject ships conservative defaults for the common ways a SaaS gets hurt.
 
 Security is still your responsibility after you change the product.
 

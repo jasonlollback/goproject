@@ -9,7 +9,7 @@ package button
 import "github.com/a-h/templ"
 import templruntime "github.com/a-h/templ/runtime"
 
-import "github.com/axadrn/goilerplate/v4/site/ui/utils"
+import "github.com/jasonlollback/goproject/site/ui/utils"
 
 type Variant string
 type Size string

@@ -15,7 +15,7 @@ import (
 	_ "github.com/jackc/pgx/v5/stdlib"
 )
 
-const connectionEnvironment = "GOILERPLATE_TEST_POSTGRES_URL"
+const connectionEnvironment = "GOPROJECT_TEST_POSTGRES_URL"
 
 func Run(m *testing.M) int {
 	container, connection, err := start()

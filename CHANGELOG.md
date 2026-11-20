@@ -1,6 +1,24 @@
 # Changelog
 
-What shipped in goilerplate, newest first.
+What shipped in goproject, newest first.
+
+## goproject initial fork
+Renamed the entire project from goilerplate to goproject and updated all module paths to `github.com/jasonlollback/goproject`.
+
+### Changed
+- **go.mod**: Module path changed from `github.com/axadrn/goilerplate/v4` to `github.com/jasonlollback/goproject`
+- **All Go imports**: Updated from `github.com/axadrn/goilerplate/v4/...` to `github.com/jasonlollback/goproject/...` across 178 Go files
+- **cmd/goilerplate/ → cmd/goproject/**: CLI binary directory renamed
+- **.goreleaser.yaml**: Project name, build ID, binary name, and main path all updated to goproject
+- **Lock file**: `goilerplate.lock` → `goproject.lock` throughout codebase and tests
+- **GitHub references**: API URLs, release page URL, stars repo, and FUNDING.yml updated to jasonlollback/goproject
+- **Site brand**: site/brand/brand.go updated with new name, URL (goproject.lollback.com), and install command
+- **Template files**: All generator/_template/ files updated (README, config, migrations, env, etc.)
+- **Documentation**: All content/docs/, README.md, CHANGELOG.md, and AGENTS.md references updated
+- **Footer author credit**: Updated from Axel Adrian to jasonlollback
+- **Generator golden hashes**: Regenerated to reflect renamed template output
+- **Test fixes**: Updated internal/update/template_test.go module path expectations for v4 major version handling
+
 
 ## v4.0.2
 
@@ -13,7 +31,7 @@ November 10, 2026
 - **Support on GitHub**: questions and bugs go to GitHub Issues. Security reports go through GitHub's private reporting.
 
 ### Upgrade
-Install the new CLI: `go install github.com/axadrn/goilerplate/v4/cmd/goilerplate@latest`.
+Install the new CLI: `go install github.com/jasonlollback/goilerplate/v4/cmd/goilerplate@latest`.
 
 ## v4.0.1
 
@@ -26,7 +44,7 @@ November 4, 2026
 - **Deploy with moin**: the guide moved to [Deploy with moin](https://goilerplate.com/docs/guides/deploy-with-moin); the old address leads there.
 
 ### Upgrade
-Install the new CLI: `go install github.com/axadrn/goilerplate/v4/cmd/goilerplate@latest`.
+Install the new CLI: `go install github.com/jasonlollback/goilerplate/v4/cmd/goilerplate@latest`.
 
 ## v4.0.0
 
@@ -52,7 +70,7 @@ If you bought goilerplate or templUI Pro: thank you. Everything you generated ke
 - **`login`, `logout`, `whoami`, `claim`, `license` and `account`**: there is nothing to sign in to any more.
 
 ### Upgrade
-Install the new CLI: `go install github.com/axadrn/goilerplate/v4/cmd/goilerplate@latest`.
+Install the new CLI: `go install github.com/jasonlollback/goilerplate/v4/cmd/goilerplate@latest`.
 
 ## v3.2.3
 
@@ -64,7 +82,7 @@ November 1, 2026
 - **Git version check**: `goilerplate update` needs Git 2.38 or newer. With an older Git it printed only a cryptic `git merge-tree` usage line; now it names the required and the installed version before downloading anything.
 
 ### Upgrade
-Update the CLI with `go install github.com/axadrn/goilerplate/v3/cmd/goilerplate@latest` or the binary from the release, then run `goilerplate update`.
+Update the CLI with `go install github.com/jasonlollback/goilerplate/v3/cmd/goilerplate@latest` or the binary from the release, then run `goilerplate update`.
 
 ## v3.2.2
 
@@ -95,7 +113,7 @@ October 30, 2026
 - **Help**: `goilerplate help new` lists every option, starting with the required `--module`.
 
 ### Upgrade
-`go install github.com/axadrn/goilerplate/v3/cmd/goilerplate@latest`.
+`go install github.com/jasonlollback/goilerplate/v3/cmd/goilerplate@latest`.
 
 ## v3.2.0
 
@@ -117,7 +135,7 @@ October 30, 2026
 - **The Free edition.** Projects generated with it cannot run `goilerplate update`, because there is no Free template to update to: generate a new project with `goilerplate new` and move your code over.
 
 ### Upgrade
-1. Install the CLI v3.2.0: `go install github.com/axadrn/goilerplate/v3/cmd/goilerplate@latest`. Older CLIs default to the Free edition, which the server now refuses.
+1. Install the CLI v3.2.0: `go install github.com/jasonlollback/goilerplate/v3/cmd/goilerplate@latest`. Older CLIs default to the Free edition, which the server now refuses.
 2. Commit your work, run `goilerplate update`, then switch to the `goilerplate-update-v3.2.0` branch.
 3. Run `go tool templ generate` and `go mod tidy`, then build and test.
 
@@ -205,7 +223,7 @@ September 4, 2026
 - Reported and fixed by Tom Siouan in the first community pull request. Thank you.
 
 ### Upgrade
-`go install github.com/axadrn/goilerplate/v3/cmd/goilerplate@latest`.
+`go install github.com/jasonlollback/goilerplate/v3/cmd/goilerplate@latest`.
 
 ## v3.0.1
 
@@ -218,7 +236,7 @@ September 4, 2026
 - Reported by an Early Access developer within hours of launch. Thank you.
 
 ### Upgrade
-`go install github.com/axadrn/goilerplate/v3/cmd/goilerplate@latest`. If you added `APP_NAME` to `.env` to get past the check, remove it; nothing reads it.
+`go install github.com/jasonlollback/goilerplate/v3/cmd/goilerplate@latest`. If you added `APP_NAME` to `.env` to get past the check, remove it; nothing reads it.
 
 ## v3.0.0
 
@@ -238,7 +256,7 @@ September 3, 2026
 - **Earlier customers are already in**: every goilerplate v1, v2 and templUI Pro license is a Paid v3 license with lifetime updates. No new purchase, no renewal.
 
 ### Upgrade
-Install the CLI: `go install github.com/axadrn/goilerplate/v3/cmd/goilerplate@latest`, then `goilerplate new`. The legacy repository stays archived and read-only with its releases and tags.
+Install the CLI: `go install github.com/jasonlollback/goilerplate/v3/cmd/goilerplate@latest`, then `goilerplate new`. The legacy repository stays archived and read-only with its releases and tags.
 
 ## v2.3.0
 

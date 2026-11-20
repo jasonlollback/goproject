@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/axadrn/goilerplate/v4/site/markdown"
+	"github.com/jasonlollback/goproject/site/markdown"
 
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"

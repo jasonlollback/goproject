@@ -1,8 +1,8 @@
-# goilerplate
+# goproject
 
 **The Go SaaS starter kit, free and open source.** One command generates a production Go app with login, billing, teams, admin, an API and tests, right on your machine. Every line is yours.
 
-[Website](https://goilerplate.com) · [Docs](https://goilerplate.com/docs) · [Changelog](https://goilerplate.com/changelog)
+[Website](https://goproject.lollback.com) · [Docs](https://goproject.lollback.com/docs) · [Changelog](https://goproject.lollback.com/changelog)
 
 ## What you get
 
@@ -20,11 +20,11 @@ Stack: Go, templ, Tailwind CSS, shadcn-templ, with htmx, Datastar, SvelteKit or 
 You need Go 1.26+ and Git.
 
 ```bash
-go install github.com/axadrn/goilerplate/v4/cmd/goilerplate@latest
-goilerplate new
+go install github.com/jasonlollback/goproject/cmd/goproject@latest
+goproject new
 ```
 
-`goilerplate new` without options opens an interactive setup. It renders the project on your machine: no account, no network.
+`goproject new` without options opens an interactive setup. It renders the project on your machine: no account, no network.
 
 ## Commands
 
@@ -39,7 +39,7 @@ goilerplate new
 ## Options for `new`
 
 ```bash
-goilerplate new --module example.com/acme --framework htmx --database sqlite --payment stripe --workspaces ./acme
+goproject new --module example.com/acme --framework htmx --database sqlite --payment stripe --workspaces ./acme
 ```
 
 | Option | Values | Default |
@@ -61,6 +61,6 @@ SvelteKit projects also need Node.js 22.17+ and pnpm.
 ## License
 
 - The CLI and this repository are [MIT](LICENSE).
-- The template in `generator/_template/` and every project goilerplate generates are [0BSD](LICENSE-0BSD). Use, change and sell what you generate. No notice or attribution is required, and generated projects ship without a LICENSE file, so you pick your own.
+- The template in `generator/_template/` and every project goproject generates are [0BSD](LICENSE-0BSD). Use, change and sell what you generate. No notice or attribution is required, and generated projects ship without a LICENSE file, so you pick your own.
 - Contributions come in under the license of the files they change. No CLA.
-- The licenses cover the code, not the name goilerplate or its logo.
+- The licenses cover the code, not the name goproject or its logo.
