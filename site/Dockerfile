@@ -1,4 +1,4 @@
-# Builds goproject.lollback.com: one server that renders the pages.
+# Builds goproject.dev.lollback.com: one server that renders the pages.
 # Build from the repository root: docker build -f site/Dockerfile . moin builds it
 # from compose.yml in the root on every push to main.
 FROM golang:1.26 AS build

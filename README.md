@@ -2,7 +2,7 @@
 
 **The Go SaaS starter kit, free and open source.** One command generates a production Go app with login, billing, teams, admin, an API and tests, right on your machine. Every line is yours.
 
-[Website](https://goproject.lollback.com) · [Docs](https://goproject.lollback.com/docs) · [Changelog](https://goproject.lollback.com/changelog)
+[Website](https://goproject.dev.lollback.com) · [Docs](https://goproject.dev.lollback.com/docs) · [Changelog](https://goproject.dev.lollback.com/changelog)
 
 ## What you get
 

@@ -11,7 +11,7 @@ This repository is goproject, free and open source: the CLI, the generator with 
 
 ## Code Structure
 
-The repository contains three parts: the CLI binary, the generator with its embedded template, and the goproject.lollback.com website.
+The repository contains three parts: the CLI binary, the generator with its embedded template, and the goproject.dev.lollback.com website.
 
 ### CLI (`cmd/goproject`)
 
@@ -44,7 +44,7 @@ The template lives in `generator/_template/` and is embedded via `//go:embed`. T
 
 ### Website (`site`)
 
-The goproject.lollback.com marketing and documentation site. Built with `templ` for Go templates, Tailwind CSS for styling, and Goldmark for Markdown rendering.
+The goproject.dev.lollback.com marketing and documentation site. Built with `templ` for Go templates, Tailwind CSS for styling, and Goldmark for Markdown rendering.
 
 - `site/cmd/server` — HTTP server with routing, asset serving, and Markdown pages
 - `site/cmd/devport` — helper to find a free port for dev mode

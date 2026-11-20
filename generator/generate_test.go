@@ -97,7 +97,7 @@ func TestGeneratedProjectLinksToDocumentation(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if !bytes.Contains(readme, []byte("goproject.lollback.com/docs")) {
+	if !bytes.Contains(readme, []byte("goproject.dev.lollback.com/docs")) {
 		t.Error("generated README does not link to the public documentation")
 	}
 }

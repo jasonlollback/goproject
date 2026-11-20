@@ -12,7 +12,7 @@ Renamed the entire project from goilerplate to goproject and updated all module 
 - **.goreleaser.yaml**: Project name, build ID, binary name, and main path all updated to goproject
 - **Lock file**: `goilerplate.lock` → `goproject.lock` throughout codebase and tests
 - **GitHub references**: API URLs, release page URL, stars repo, and FUNDING.yml updated to jasonlollback/goproject
-- **Site brand**: site/brand/brand.go updated with new name, URL (goproject.lollback.com), and install command
+- **Site brand**: site/brand/brand.go updated with new name, URL (goproject.dev.lollback.com), and install command
 - **Template files**: All generator/_template/ files updated (README, config, migrations, env, etc.)
 - **Documentation**: All content/docs/, README.md, CHANGELOG.md, and AGENTS.md references updated
 - **Footer author credit**: Updated from Axel Adrian to jasonlollback

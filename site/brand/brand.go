@@ -4,6 +4,6 @@ package brand
 const (
 	Name    = "goproject"
 	Tagline = "The Go SaaS project kit, free and open source"
-	URL     = "https://goproject.lollback.com"
+	URL     = "https://goproject.dev.lollback.com"
 	Install = "go install github.com/jasonlollback/goproject/cmd/goproject@latest"
 )

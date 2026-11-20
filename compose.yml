@@ -1,14 +1,28 @@
-# goproject.lollback.com, deployed by moin: every push to main goes live.
-# https://moin.run/docs/guides/config
-x-moin:
-  app: goproject
-  port: 8090
-  health: /healthz
-  domains: [goproject.lollback.com, www.goproject.lollback.com]
-  canonical: goproject.lollback.com
-
+# Production deployment.
+#
+#   docker compose up -d --build
+#
 services:
-  site:
-    build:
-      context: .
-      dockerfile: site/Dockerfile
+  app:
+    build: .
+    image: goproject:latest
+    container_name: goproject
+    restart: unless-stopped
+    environment:
+      APP_ENV: production
+      PORT: "8090"      
+    expose:      
+      - 8090
+    networks: 
+      - proxy
+    labels:
+      traefik.enable: "true"
+      traefik.http.routers.goproject.rule: Host(`goproject.dev.lollback.com`)
+      traefik.http.routers.goproject.entrypoints: websecure
+      traefik.http.routers.goproject.tls: "true"
+      traefik.http.routers.goproject.tls.certresolver: letsencrypt
+      traefik.http.services.goproject.loadbalancer.server.port: 8090
+
+networks:
+  proxy:
+    external: true
